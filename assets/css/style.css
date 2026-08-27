@@ -411,7 +411,7 @@ a {
 
 .filosofia-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
     gap: 30px;
     padding: 40px 0;
 }
@@ -495,7 +495,6 @@ a {
     border-color: var(--rosado-oscuro);
 }
 
-
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
@@ -536,5 +535,31 @@ a {
     
     .container {
         padding: 20px 0;
-    }         
+    }
+
+    /* --- AJUSTES DE ADAPTABILIDAD PARA NOSOTROS --- */
+    .local-banner-text {
+        width: 95%;
+    }
+
+    .local-banner-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .filosofia-grid {
+        grid-template-columns: 1fr; /* Una sola columna en dispositivos móviles */
+        padding: 20px 0;
+    }
+
+    .card-full-width {
+        grid-column: auto; /* Restablece el ancho de la tarjeta completa en móviles */
+    }
+
+    .filosofia-card {
+        padding: 25px 15px;
+    }
+
+    .values-list li {
+        font-size: 0.95rem;
+    }
 }
