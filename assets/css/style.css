@@ -494,34 +494,35 @@ a {
     transform: scale(1.08);
     border-color: var(--rosado-oscuro);
 }
-
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
-        gap: 10px; 
+        gap: 8px; 
         padding: 10px 0;
     }
     
     .logo img {
-        height: 50px;
+        height: 45px;
         width: auto;
         margin: 0 auto;
     }
 
     .brand-title h1 {
-        font-size: 1.5rem; 
+        font-size: 1.4rem; 
         text-align: center;
     }
     
     .main-nav ul {
-        flex-direction: column;
-        text-align: center;
-        gap: 8px;
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 6px;
+        padding: 0;
     }
 
     .main-nav a {
-        font-size: 0.95rem;
-        padding: 6px 16px;
+        font-size: 0.85rem;
+        padding: 5px 10px;
         display: inline-block;
     }
     
@@ -547,12 +548,12 @@ a {
     }
 
     .filosofia-grid {
-        grid-template-columns: 1fr; /* Una sola columna en dispositivos móviles */
+        grid-template-columns: 1fr;
         padding: 20px 0;
     }
 
     .card-full-width {
-        grid-column: auto; /* Restablece el ancho de la tarjeta completa en móviles */
+        grid-column: auto;
     }
 
     .filosofia-card {
